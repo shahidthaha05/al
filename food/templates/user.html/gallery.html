@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Al Safa Foodpark</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #8b0000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar .brand {
+      color: #f8f8f8;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: #f8f8f8;
+      padding: 10px 14px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #f4a261;
+      color: #000;
+    }
+
+    /* Content */
+    .content {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #b22222;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #6e260e;
+      margin-top: -10px;
+      margin-bottom: 40px;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      width: 300px;
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-caption {
+      margin-top: 8px;
+      color: #8b0000;
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .gallery-caption p {
+      font-weight: normal;
+      color: #6e260e;
+      font-style: italic;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #8b0000;
+      color: #f8f8f8;
+      padding: 20px 30px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #f4a261;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .gallery-item {
+        width: 90%;
+      }
+
+      .nav-right {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar a {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+
+      .content {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/" class="brand">Al Safa Foodpark</a>
+    <div class="nav-right">
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/menu">Menu</a>
+      <a href="/gallery">Gallery</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <h1>Gallery</h1>
+    <p class="tagline">A visual taste of Kerala’s rich culinary heritage.</p>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="/media/dosa1.jpg" alt="Appam and Stew" />
+        <div class="gallery-caption">
+          <div>Dosha</div>
+          <p>Soft Dosha with creamy Chammanthi – a breakfast favorite.</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="/media/rotti.webp" alt="Kerala Sadya" />
+        <div class="gallery-caption">
+          <div>Appam</div>
+          <p>Soft Appam and spicy Chicken Curry</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="/media/puttu.webp" alt="Fish Curry Meal" />
+        <div class="gallery-caption">
+          <div>Puttu</div>
+          <p>Soft puttu with kadala curry</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="/media/360_F_608842413_hdYadp6uSC7c7pq6LJew9s8gPnRSgjln.jpg" alt="Chicken Biriyani" />
+        <div class="gallery-caption">
+          <div>Chicken Biriyani</div>
+          <p>Taste the hot and flavorful chicken biriyani</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="/media/porotta.jpg" alt="Porotta and Beef" />
+        <div class="gallery-caption">
+          <div>Porotta and Beef</div>
+          <p>The Kerala special Porotta and beef combo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Al Safa Foodpark. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/sha_hidthaha" target="_blank">Instagram</a> |
+      <a href="https://wa.me/916282771585" target="_blank">WhatsApp</a> |
+      <a href="tel:+916282771585">+91 62827 71585</a>
+    </p>
+  </footer>
+
+</body>
+</html>

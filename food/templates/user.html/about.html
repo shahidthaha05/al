@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Al Safa Foodpark</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #8b0000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar .brand {
+      color: #f8f8f8;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: #f8f8f8;
+      padding: 10px 14px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #f4a261;
+      color: #000;
+    }
+
+    .content {
+      padding: 60px 20px 20px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #b22222;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #6e260e;
+      margin-top: -10px;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      background-color: #fff0e6;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .section h2 {
+      color: #b22222;
+      margin-top: 0;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .team-member {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      margin: 10px 0 5px 0;
+      color: #8b0000;
+    }
+
+    .team-member p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #8b0000;
+      color: #f8f8f8;
+      padding: 20px 30px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f4a261;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .section p {
+        font-size: 16px;
+      }
+
+      .team-member {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-right {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .navbar a {
+        padding: 8px 10px;
+        font-size: 14px;
+      }
+
+      .content {
+        padding: 40px 15px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .team {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="/" class="brand">Al Safa Foodpark</a>
+    <div class="nav-right">
+      <a href="/">Home</a>
+      <a href="/about">About Us</a>
+      <a href="/menu">Menu</a>
+      <a href="/gallery">Gallery</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>About Al Safa Foodpark</h1>
+    <p class="tagline">Blending flavors, stories, and heart since 2020.</p>
+
+    <div class="section">
+      <h2>Our Journey</h2>
+      <p>
+        What started as a small family-run kitchen has now blossomed into a local favorite. At Al Safa Foodpark, we believe food is more than just nourishment—it's a celebration of culture, love, and shared memories. Each recipe we serve is rooted in tradition and refined with a touch of innovation.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Our Philosophy</h2>
+      <p>
+        We are committed to using fresh, locally sourced ingredients to bring you meals that are wholesome and full of flavor. Sustainability, community, and culinary excellence are at the heart of everything we do. When you dine with us, you're family.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/260x220?text=Chef+Maria" alt="Chef Maria" />
+          <h3>Chef Maria</h3>
+          <p>Master of spices and soul-warming dishes, Chef Maria brings decades of culinary artistry to your plate.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/260x220?text=Manager+Leo" alt="Manager Leo" />
+          <h3>Manager Leo</h3>
+          <p>Leo ensures every guest feels welcomed, with service that’s as unforgettable as the food itself.</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/260x220?text=Pastry+Chef+Anna" alt="Pastry Chef Anna" />
+          <h3>Pastry Chef Anna</h3>
+          <p>Sweetening your day with decadent desserts, Anna’s creations are the cherry on top of your visit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Al Safa Foodpark. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/sha_hidthaha" target="_blank">Instagram</a> |
+      <a href="https://wa.me/6282771585" target="_blank">WhatsApp</a> |
+      <a href="tel:+916282771585">+91 6282771585</a>
+    </p>
+  </footer>
+
+</body>
+</html>
