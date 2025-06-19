@@ -189,10 +189,6 @@
       text-align: center;
     }
 
-    footer .footer-links {
-      margin-top: 15px;
-    }
-
     footer a {
       color: #f4a261;
       text-decoration: none;
@@ -202,7 +198,7 @@
     }
 
     footer a:hover {
-      color: #f4a261;
+      color: #fff;
     }
 
     @media (max-width: 640px) {
@@ -237,6 +233,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <div class="navbar">
     <a href="/" class="brand">Al Safa Foodpark</a>
     <div class="nav-links">
@@ -248,17 +245,10 @@
     </div>
   </div>
 
+  <!-- Main Content -->
   <div class="content">
     <h1>Contact Us</h1>
     <p class="tagline">We'd love to hear from you!</p>
-
-    {% if messages %}
-    <div class="messages">
-      {% for message in messages %}
-        <p>{{ message }}</p>
-      {% endfor %}
-    </div>
-    {% endif %}
 
     <div class="contact-info">
       <h2>Get in Touch</h2>
@@ -268,8 +258,8 @@
       <p><strong>Hours:</strong> Mon – Sun: 11:00 AM – 12:00 AM</p>
 
       <div class="social-links">
-        <a href="https://wa.me/9074805470" target="_blank">📱 WhatsApp</a>
-        <a href="https://instagram.com/sha_hidthaha" target="_blank">📸 Instagram</a>
+        <a href="https://wa.me/919074805470" target="_blank">📱 WhatsApp</a>
+        <a href="https://instagram.com/al_safafoodpark" target="_blank">📸 Instagram</a>
         <a href="tel:+919074805470">📞 Call</a>
       </div>
     </div>
@@ -283,23 +273,25 @@
       </form>
     </div>
 
+    <!-- Embedded Google Map -->
     <iframe 
       class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.786417968618!2d76.77463327472258!3d9.691942179542204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b065c80c0b3ebef%3A0x5c2458f3a9273a9a!2sErattupetta%2C%20Kerala%20686121!5e0!3m2!1sen!2sin!4v1717171717171!5m2!1sen!2sin" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.008389574357!2d76.77982147465388!3d9.705614090441592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b065c3b14639d8f%3A0x6fbe71b4717a1fc1!2sAl%20Safa%20Foodpark!5e0!3m2!1sen!2sin!4v1718790998799!5m2!1sen!2sin" 
       allowfullscreen 
       loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade" 
-      aria-label="Erattupetta location map">
+      aria-label="Al Safa Foodpark location map">
     </iframe>
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Al Safa Foodpark. All rights reserved.</p>
     <p>
-        <a href="https://www.instagram.com/sha_hidthaha" target="_blank">Instagram</a> |
-        <a href="https://wa.me/919074805470" target="_blank">WhatsApp</a> |
-        <a href="tel:+919074805470">+91 9074805470</a>
-      </p>
+      <a href="https://www.instagram.com/al_safafoodpark" target="_blank">Instagram</a> |
+      <a href="https://wa.me/919074805470" target="_blank">WhatsApp</a> |
+      <a href="tel:+919074805470">+91 9074805470</a>
+    </p>
   </footer>
 
 </body>
